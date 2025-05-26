@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forecasting e Contatori - SIME Partecipazioni S.p.A.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div>
+                        <h1>SIME Partecipazioni S.p.A.</h1>
+                        <p>Forecasting e Gestione Contatori</p>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Cerca tecniche, contatori, procedure...">
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-tabs">
+                <button class="nav-tab" data-section="glossario">
+                    <i class="fas fa-book"></i>
+                    Glossario
+                </button>
+                <button class="nav-tab" data-section="procedure">
+                    <i class="fas fa-cogs"></i>
+                    Procedure
+                </button>
+                <button class="nav-tab" data-section="flussi">
+                    <i class="fas fa-project-diagram"></i>
+                    Flussi
+                </button>
+                <button class="nav-tab" data-section="controlli">
+                    <i class="fas fa-clipboard-check"></i>
+                    Controlli
+                </button>
+                <button class="nav-tab active" data-section="forecasting">
+                    <i class="fas fa-chart-line"></i>
+                    Forecasting
+                </button>
+                <button class="nav-tab" data-section="contatori">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Contatori
+                </button>
+                <button class="nav-tab" data-section="corporate">
+                    <i class="fas fa-building"></i>
+                    Corporate
+                </button>
+                <button class="nav-tab" data-section="operativita">
+                    <i class="fas fa-clock"></i>
+                    Operatività
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Forecasting Section -->
+            <section id="forecasting" class="content-section active">
+                <div class="section-header">
+                    <h2><i class="fas fa-chart-line"></i> Tecniche di Forecasting</h2>
+                    <p>Metodologie avanzate per la previsione dei consumi energetici</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3><i class="fas fa-recycle"></i> Ricandelarizzazione</h3>
+                        <div class="definition-list">
+                            <div class="definition-item">
+                                <strong>Principio Base:</strong> Utilizzare i consumi della settimana/anno precedente come base per le previsioni future
+                            </div>
+                            <div class="definition-item">
+                                <strong>Spostamento Temporale:</strong> Applicare i pattern storici al periodo che sta arrivando
+                            </div>
+                            <div class="definition-item">
+                                <strong>Adattamento:</strong> Calibrare i dati considerando variazioni stagionali e operative
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-user-plus"></i> Nuovo Utente nel Modello</h3>
+                        <div class="procedure-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div class="step-content">
+                                    <strong>Acquisizione Dati</strong>
+                                    <ul>
+                                        <li>Consumo totale previsto del cliente</li>
+                                        <li>Pattern del grafico di consumo (profilo di carico)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div class="step-content">
+                                    <strong>Applicazione Pattern</strong>
+                                    <ul>
+                                        <li>Distribuire il consumo secondo il pattern identificato</li>
+                                        <li>Garantire distribuzione temporale corretta</li>
+                                        <li>Considerare specificità del cliente</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-exchange-alt"></i> Gestione Switch</h3>
+                        <div class="definition-list">
+                            <div class="definition-item">
+                                <strong>Dati Storici:</strong> Vengono forniti i consumi dell'anno precedente del cliente
+                            </div>
+                            <div class="definition-item">
+                                <strong>Continuità:</strong> Mantenere il pattern di consumo esistente del cliente
+                            </div>
+                            <div class="definition-item">
+                                <strong>Adattamento:</strong> Calibrare eventuali variazioni dovute al cambio fornitore
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contatori Section -->
+            <section id="contatori" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-tachometer-alt"></i> Tipologie di Contatori Elettrici</h2>
+                    <p>Sistemi di misurazione e monitoraggio dei consumi</p>
+                </div>
+
+                <div class="procedure-cards">
+                    <div class="procedure-card">
+                        <div class="procedure-header">
+                            <h3><i class="fas fa-microchip"></i> Contatore 2G (Seconda Generazione)</h3>
+                        </div>
+                        <div class="procedure-content">
+                            <h4>Caratteristiche Tecniche</h4>
+                            <ul>
+                                <li><strong>Frequenza di Lettura:</strong> Comunicazione ogni 15 minuti</li>
+                                <li><strong>Trasmissione:</strong> Dati giornalieri in tempo reale</li>
+                                <li><strong>Precisione:</strong> Massima granularità dei dati</li>
+                                <li><strong>Tendenza:</strong> Il mercato si sposta verso questa tecnologia</li>
+                            </ul>
+                            <h4>Vantaggi Operativi</h4>
+                            <ul>
+                                <li>Monitoraggio in tempo reale</li>
+                                <li>Gestione ottimale del bilanciamento</li>
+                                <li>Previsioni più accurate</li>
+                                <li>Controllo immediato degli sbilanciamenti</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="procedure-card">
+                        <div class="procedure-header">
+                            <h3><i class="fas fa-clock"></i> Contatore 1G + Servizio Demetra</h3>
+                        </div>
+                        <div class="procedure-content">
+                            <h4>Caratteristiche Base 1G</h4>
+                            <ul>
+                                <li><strong>Frequenza:</strong> Dati sui consumi orari</li>
+                                <li><strong>Trasmissione:</strong> Solo mese per mese</li>
+                                <li><strong>Limitazioni:</strong> Ritardo nella disponibilità dei dati</li>
+                            </ul>
+                            <h4>Servizio Demetra</h4>
+                            <ul>
+                                <li><strong>Clienti Corporate:</strong> Grandi aziende con elevati consumi</li>
+                                <li><strong>Cogenerazione:</strong> Backup per malfunzionamenti cogeneratore</li>
+                                <li><strong>Funzionalità:</strong> Trasformazione dati mensili in giornalieri</li>
+                                <li><strong>Monitoraggio:</strong> Avanzato per clienti strategici</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="procedure-card">
+                        <div class="procedure-header">
+                            <h3><i class="fas fa-chart-area"></i> Contatori Long Profile</h3>
+                        </div>
+                        <div class="procedure-content">
+                            <h4>Caratteristiche</h4>
+                            <ul>
+                                <li><strong>PRA:</strong> Percentuale di consumo definita come Profilo di Prelievo Aggregato</li>
+                                <li><strong>Metodologia:</strong> Ricandelarizzazione consumi anno precedente</li>
+                                <li><strong>Status:</strong> Tecnologia in dismissione</li>
+                            </ul>
+                            <h4>Evoluzione Tecnologica</h4>
+                            <ul>
+                                <li><strong>Transizione:</strong> Spostamento verso contatori 2G</li>
+                                <li><strong>Obsolescenza:</strong> Long profile sta scomparendo</li>
+                                <li><strong>Migrazione:</strong> Aggiornamento a tecnologie moderne</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-notes">
+                    <h3><i class="fas fa-info-circle"></i> POD (Point of Delivery)</h3>
+                    <div class="notes-grid">
+                        <div class="note-item info">
+                            <i class="fas fa-plug"></i>
+                            <strong>Definizione:</strong> Il POD corrisponde al contatore, strumento per rilevare i consumi elettrici
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Corporate Section -->
+            <section id="corporate" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-building"></i> Gestione Clienti Corporate</h2>
+                    <p>Contratti e meccanismi per grandi clienti industriali</p>
+                </div>
+
+                <div class="flow-diagrams">
+                    <div class="flow-card">
+                        <h3><i class="fas fa-handshake"></i> Contratti a Quote Fisse</h3>
+                        <div class="definition-list">
+                            <div class="definition-item">
+                                <strong>Prezzo Fisso:</strong> Stabilito per una determinata quota di consumo
+                            </div>
+                            <div class="definition-item">
+                                <strong>Gestione Eccedenze:</strong> Meccanismo di bilanciamento automatico
+                            </div>
+                            <div class="definition-item">
+                                <strong>Flessibilità:</strong> Adattamento alle variazioni di consumo del cliente
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-card">
+                        <h3><i class="fas fa-balance-scale"></i> Meccanismo di Sbilanciamento</h3>
+                        <div class="sbilanciamento-grid">
+                            <div class="sbilanciamento-case positive">
+                                <h4><i class="fas fa-arrow-up"></i> Consumo Superiore</h4>
+                                <ul>
+                                    <li><strong>Eccedenza:</strong> Cliente acquista la differenza</li>
+                                    <li><strong>Prezzo:</strong> Mercato di sbilanciamento</li>
+                                    <li><strong>Automatismo:</strong> Gestione trasparente</li>
+                                </ul>
+                            </div>
+                            <div class="sbilanciamento-case negative">
+                                <h4><i class="fas fa-arrow-down"></i> Consumo Inferiore</h4>
+                                <ul>
+                                    <li><strong>Rivendita:</strong> SIME gestisce la quota non utilizzata</li>
+                                    <li><strong>Prezzo:</strong> Sbilanciamento di mercato</li>
+                                    <li><strong>Storno:</strong> Differenza accreditata al cliente</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flow-card">
+                        <h3><i class="fas fa-star"></i> Vantaggi per il Cliente</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-calculator"></i>
+                                <strong>Prevedibilità</strong>
+                                <span>Costi fissi per quota base</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                                <strong>Flessibilità</strong>
+                                <span>Gestione variazioni consumo</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-cogs"></i>
+                                <strong>Automatismo</strong>
+                                <span>Gestione automatica sbilanciamenti</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-eye"></i>
+                                <strong>Trasparenza</strong>
+                                <span>Meccanismi di pricing chiari</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Operatività Section -->
+            <section id="operativita" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-clock"></i> Operatività Quotidiana</h2>
+                    <p>Routine e best practices per la gestione giornaliera</p>
+                </div>
+
+                <div class="controls-grid">
+                    <div class="control-card daily">
+                        <h3><i class="fas fa-sun"></i> Routine Mattutina</h3>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Caricamento forecast giorni successivi
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Aggiornamento modelli predittivi
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Calibrazione dati storici
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Aggiustamento quote gas
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Ottimizzazione portafoglio elettrico
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Confronto consumi reali vs previsioni
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-card monthly">
+                        <h3><i class="fas fa-chart-line"></i> Monitoraggio Deviazioni</h3>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Analisi scostamenti dalle previsioni
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Identificazione trend anomali
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Correzioni proattive
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Aggiustamenti real-time strategie
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-card yearly">
+                        <h3><i class="fas fa-brain"></i> Apprendimento Continuo</h3>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Miglioramento modelli predittivi
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Storicizzazione pattern consumo
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Validazione qualità previsioni
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-section">
+                    <h3><i class="fas fa-chart-bar"></i> Indicatori di Performance</h3>
+                    <div class="kpi-grid">
+                        <div class="kpi-card forecasting">
+                            <h4>KPI Forecasting</h4>
+                            <ul>
+                                <li><strong>Accuratezza Previsioni:</strong> Scostamento medio dalle previsioni</li>
+                                <li><strong>Tempo di Reazione:</strong> Velocità aggiustamento deviazioni</li>
+                                <li><strong>Costo Sbilanciamenti:</strong> Impatto economico errori</li>
+                            </ul>
+                        </div>
+                        <div class="kpi-card contatori">
+                            <h4>KPI Gestione Contatori</h4>
+                            <ul>
+                                <li><strong>Copertura 2G:</strong> % clienti con contatori nuova generazione</li>
+                                <li><strong>Utilizzo Demetra:</strong> Penetrazione servizio corporate</li>
+                                <li><strong>Qualità Dati:</strong> Affidabilità letture per tipologia</li>
+                            </ul>
+                        </div>
+                        <div class="kpi-card operativi">
+                            <h4>KPI Operativi</h4>
+                            <ul>
+                                <li><strong>Marginalità:</strong> Profitto per tipologia cliente</li>
+                                <li><strong>Soddisfazione Cliente:</strong> Feedback su servizio</li>
+                                <li><strong>Efficienza Operativa:</strong> Tempo attività bilanciamento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tecnologie di Misurazione</h4>
+                    <ul>
+                        <li><strong>Contatori 2G:</strong> Tecnologia avanzata con letture ogni 15 minuti</li>
+                        <li><strong>Servizio Demetra:</strong> Potenziamento contatori 1G per clienti corporate</li>
+                        <li><strong>Long Profile:</strong> Sistema tradizionale in fase di dismissione</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Metodologie Forecasting</h4>
+                    <ul>
+                        <li><strong>Ricandelarizzazione:</strong> Utilizzo pattern storici per previsioni</li>
+                        <li><strong>Gestione Switch:</strong> Integrazione dati storici nuovi clienti</li>
+                        <li><strong>Bilanciamento Real-time:</strong> Aggiustamenti continui delle posizioni</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SIME Partecipazioni S.p.A. - Forecasting e Gestione Contatori</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario Tecnico - SIME Partecipazioni S.p.A.</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-bolt logo-icon"></i>
+                    <div>
+                        <h1>SIME Partecipazioni S.p.A.</h1>
+                        <p>Supply e Portfolio Power Management</p>
+                    </div>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Cerca termini, procedure, acronimi...">
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="glossario">
+                    <i class="fas fa-book"></i>
+                    Glossario
+                </button>
+                <button class="nav-tab" data-section="procedure">
+                    <i class="fas fa-cogs"></i>
+                    Procedure
+                </button>
+                <button class="nav-tab" data-section="flussi">
+                    <i class="fas fa-project-diagram"></i>
+                    Flussi
+                </button>
+                <button class="nav-tab" data-section="controlli">
+                    <i class="fas fa-clipboard-check"></i>
+                    Controlli
+                </button>
+                <button class="nav-tab" data-section="forecasting">
+                    <i class="fas fa-chart-line"></i>
+                    Forecasting
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Glossario Section -->
+            <section id="glossario" class="content-section active">
+                <div class="section-header">
+                    <h2><i class="fas fa-book"></i> Glossario Termini Tecnici</h2>
+                    <p>Definizioni e acronimi del settore energetico</p>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3><i class="fas fa-tags"></i> Acronimi e Sigle</h3>
+                        <div class="acronym-list">
+                            <div class="acronym-item">
+                                <span class="acronym">G.M.E.</span>
+                                <span class="definition">Gestore Mercati Energetici</span>
+                            </div>
+                            <div class="acronym-item">
+                                <span class="acronym">U.D.D.</span>
+                                <span class="definition">Unità di Dispacciamento</span>
+                            </div>
+                            <div class="acronym-item">
+                                <span class="acronym">P.S.V.</span>
+                                <span class="definition">Punto di Scambio Virtuale</span>
+                            </div>
+                            <div class="acronym-item">
+                                <span class="acronym">R.C.U.</span>
+                                <span class="definition">Registro Clienti Unico</span>
+                            </div>
+                            <div class="acronym-item">
+                                <span class="acronym">HUB</span>
+                                <span class="definition">Punto di Consegna Unico (PCU)</span>
+                            </div>
+                            <div class="acronym-item">
+                                <span class="acronym">UTP</span>
+                                <span class="definition">HUB localizzato</span>
+                            </div>
+                            <div class="acronym-item">
+                                <span class="acronym">G.O.</span>
+                                <span class="definition">Garanzie di Origine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-gas-pump"></i> Mercato Gas</h3>
+                        <div class="definition-list">
+                            <div class="definition-item">
+                                <strong>Anno Gas:</strong> Periodo che va da ottobre a settembre dell'anno successivo
+                            </div>
+                            <div class="definition-item">
+                                <strong>Base Load:</strong> Differenza tra energia acquisita e venduta necessaria per il trading
+                            </div>
+                            <div class="definition-item">
+                                <strong>Day Ahead:</strong> Mercato del giorno prima
+                            </div>
+                            <div class="definition-item">
+                                <strong>Intraday:</strong> Mercato infragiornaliero (gas alle 14:30)
+                            </div>
+                            <div class="definition-item">
+                                <strong>Prezzo Indicizzato:</strong> Prezzo variabile legato agli indici di mercato
+                            </div>
+                            <div class="definition-item">
+                                <strong>Prezzo Fisso:</strong> Prezzo stabilito contrattualmente
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3><i class="fas fa-users"></i> Gestione Clienti</h3>
+                        <div class="definition-list">
+                            <div class="definition-item">
+                                <strong>Switch:</strong> Cambio fornitore del cliente
+                            </div>
+                            <div class="definition-item">
+                                <strong>Allocazioni:</strong> Consumi mensili pubblici
+                            </div>
+                            <div class="definition-item">
+                                <strong>Contatore 2G:</strong> Sistema di misurazione con codice unico comunicato giornalmente
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Procedure Section -->
+            <section id="procedure" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-cogs"></i> Procedure Operative</h2>
+                    <p>Processi standardizzati per la gestione operativa</p>
+                </div>
+
+                <div class="procedure-cards">
+                    <div class="procedure-card">
+                        <div class="procedure-header">
+                            <h3><i class="fas fa-shield-alt"></i> Garanzie e Margini di Guadagno</h3>
+                        </div>
+                        <div class="procedure-content">
+                            <h4>Garanzie per la Clienti Vendita</h4>
+                            <ul>
+                                <li><strong>Lavorare per ridurre i costi</strong></li>
+                                <li><strong>Garantire margini durante la vendita</strong></li>
+                            </ul>
+                            <h4>Prompt</h4>
+                            <ul>
+                                <li><strong>WID in DAY:</strong> Prezzo giornaliero</li>
+                                <li><strong>Base Load:</strong> Differenza tra acquisito e fornitura necessaria intraday</li>
+                                <li><strong>Day Ahead:</strong> Prezzo giorno dopo</li>
+                            </ul>
+                            <h4>Nota Bene</h4>
+                            <ul>
+                                <li><strong>Valori BYD e ASK:</strong> Pubblicati alle 17:30 assieme al valore dell'indice</li>
+                                <li><strong>Day Ahead:</strong> Copre solo i giorni lavorativi inglesi</li>
+                                <li><strong>WNED:</strong> Copre fine settimana e festivi</li>
+                            </ul>
+                            <h4>Per Garantire la Fornitura</h4>
+                            <ul>
+                                <li><strong>Proposta out of range:</strong> Facendo una proposta di acquisto fuori dai valori medi che il mercato sta passando alla chiusura della giornata garantirò che la mia domanda di acquisto entri a mercato in qualsiasi caso ma, questa entrerà al prezzo massimo di mercato</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="procedure-card">
+                        <div class="procedure-header">
+                            <h3><i class="fas fa-chart-line"></i> Gestione Portafoglio</h3>
+                        </div>
+                        <div class="procedure-content">
+                            <h4>Monitoraggio Quotidiano</h4>
+                            <ul>
+                                <li><strong>Misure:</strong> Controllo giornaliero delle letture</li>
+                                <li><strong>Contatori 2G:</strong> Verifica codici unici comunicati</li>
+                                <li><strong>Previsioni:</strong> Acquisiti 200 di giugno (esempio)</li>
+                            </ul>
+                            <h4>Bilanciamento</h4>
+                            <ul>
+                                <li><strong>Riequilibramento:</strong> Gestione periodo richiesta a fisso</li>
+                                <li><strong>Controllo Gestione:</strong> Prezzo da indicizzato a fisso (20 come riferimento)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="procedure-card">
+                        <div class="procedure-header">
+                            <h3><i class="fas fa-exchange-alt"></i> Portafoglio Switch</h3>
+                        </div>
+                        <div class="procedure-content">
+                            <h4>Gestione Switch</h4>
+                            <ul>
+                                <li><strong>Switch:</strong> Cambio fornitore del cliente</li>
+                                <li><strong>Richiesta entro il 10:</strong> Per attivazione il 1° del mese successivo</li>
+                                <li><strong>Ultimi 2 giorni:</strong> Tempo limite per operazioni</li>
+                            </ul>
+                            <h4>Ricontrattazione</h4>
+                            <ul>
+                                <li><strong>Da indicizzato a fisso:</strong> La richiesta entra dal mese successivo</li>
+                                <li><strong>Frazionamento:</strong> Possibile ricontrattare anche a pezzi</li>
+                                <li><strong>Energia G.O.:</strong> Transfer price obbligatorio col prezzo fissato</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Flussi Section -->
+            <section id="flussi" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-project-diagram"></i> Flussi Operativi</h2>
+                    <p>Diagrammi dei processi principali</p>
+                </div>
+
+                <div class="flow-diagrams">
+                    <div class="flow-card">
+                        <h3><i class="fas fa-gas-pump"></i> Flusso Gas</h3>
+                        <div class="flow-diagram">
+                            <div class="flow-step">Acquisto Gas</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">HUB (Distribuzione)</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Trasportatore</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Società Distribuzione</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Cliente Finale</div>
+                        </div>
+                    </div>
+
+                    <div class="flow-card">
+                        <h3><i class="fas fa-bolt"></i> Flusso Elettrico</h3>
+                        <div class="flow-diagram">
+                            <div class="flow-step">Produttori</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Terna (Trasporto)</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Distribuzione Elettrica</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Cliente Finale</div>
+                        </div>
+                    </div>
+
+                    <div class="flow-card">
+                        <h3><i class="fas fa-exchange-alt"></i> Gestione Switch</h3>
+                        <div class="flow-diagram">
+                            <div class="flow-step">Richiesta Cliente</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Verifica Tempistiche</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Attivazione</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Controllo Gestione</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-step">Fatturazione</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Controlli Section -->
+            <section id="controlli" class="content-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-clipboard-check"></i> Controlli e Verifiche</h2>
+                    <p>Checklist operative per monitoraggio e compliance</p>
+                </div>
+
+                <div class="controls-grid">
+                    <div class="control-card daily">
+                        <h3><i class="fas fa-calendar-day"></i> Controlli Giornalieri</h3>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Verifica misure contatori
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Controllo allocazioni
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Monitoraggio prezzi mercato
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Gestione sbilanciamenti
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-card monthly">
+                        <h3><i class="fas fa-calendar-alt"></i> Controlli Mensili</h3>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Riconciliazioni consumi
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Calcolo garanzie
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Analisi portafoglio
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Ottimizzazione margini
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-card yearly">
+                        <h3><i class="fas fa-calendar"></i> Controlli Annuali</h3>
+                        <div class="checklist">
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Revisione anno gas (ottobre-settembre)
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Aggiornamento procedure
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Analisi performance portafoglio
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-notes">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Note Operative Importanti</h3>
+                    <div class="notes-grid">
+                        <div class="note-item critical">
+                            <i class="fas fa-clock"></i>
+                            <strong>Tempistiche Critical:</strong> Rispettare le scadenze per switch e attivazioni
+                        </div>
+                        <div class="note-item warning">
+                            <i class="fas fa-eye"></i>
+                            <strong>Monitoraggio Continuo:</strong> Controllo quotidiano delle misure e allocazioni
+                        </div>
+                        <div class="note-item info">
+                            <i class="fas fa-balance-scale"></i>
+                            <strong>Gestione Rischi:</strong> Bilanciamento costante tra acquisizioni e vendite
+                        </div>
+                        <div class="note-item success">
+                            <i class="fas fa-chart-line"></i>
+                            <strong>Ottimizzazione:</strong> Focus sulla riduzione costi e massimizzazione margini
+                        </div>
+                        <div class="note-item info">
+                            <i class="fas fa-gavel"></i>
+                            <strong>Compliance:</strong> Rispetto normative GME e Terna
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Enti di Riferimento</h4>
+                    <ul>
+                        <li><strong>GME:</strong> Gestore Mercati Energetici</li>
+                        <li><strong>Terna:</strong> Gestore rete elettrica nazionale</li>
+                        <li><strong>Società di Distribuzione:</strong> Partner locali per consegna finale</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sistemi Informativi</h4>
+                    <ul>
+                        <li><strong>Portale GME:</strong> Per operazioni mercato</li>
+                        <li><strong>Sistema Contatori 2G:</strong> Per letture automatiche</li>
+                        <li><strong>Piattaforma Switch:</strong> Per gestione cambi fornitore</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SIME Partecipazioni S.p.A. - Supply e Portfolio Power Management</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
